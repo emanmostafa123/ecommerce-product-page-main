@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommerce-product-page-main</title>
+    <link rel="icon" type="image/gif/png" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./reset.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-m">
+            <img src="./images/logo.svg" alt="logo" class="logo">
+            <nav class="nav1">
+                <button class="menu-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="#">Collection</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            <img src="./images/icon-cart.svg" alt="cart" class="cart">
+            <img src="./images/image-avatar.png" alt="avatar" class="avatar">
+
+        </div> 
+
+        <div class="model" style="margin-left: 200px; margin-top: 75px;">
+
+            <div class="mySlides fade">
+            
+                <img src="./images/image-product-1.jpg" alt="product1" class="product1">
+            </div>
+            <div class="mySlides fade">
+
+                <img src="./images/image-product-2.jpg" alt="product2" class="product2">
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="./images/image-product-3.jpg" alt="product3" class="product3">
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="./images/image-product-4.jpg" alt="product4" class="product4">
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)" style="margin-top: 95px; margin-left: 0px; ">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)" style="margin-right: 888px; margin-top: 95px;">&#10095;</a>
+
+            <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="./images/image-product-1-thumbnail.jpg" style="width:90px; border-radius: 10px;" onclick="currentSlide(1)" alt="1">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./images/image-product-2-thumbnail.jpg" style="width:90px; border-radius: 10px;" onclick="currentSlide(2)" alt="2">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./images/image-product-3-thumbnail.jpg" style="width:90px; border-radius: 10px;" onclick="currentSlide(3)" alt="3">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./images/image-product-4-thumbnail.jpg" style="width:90px; border-radius: 10px;" onclick="currentSlide(4)" alt="4">
+                </div>
+                
+              </div>
+
+        </div>
+
+        <div class="textcontainer">
+            <p class="textp1">Sneaker Company</p>
+            <p class="textp2">Fall Limited Edition Sneakers</p>
+            <p class="textp3">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+            <p class="price1">$125.00</p>
+            <div class="condis"><p class="discount">50%</p></div>
+            <p class="price2">$250.00</p>
+            
+
+            <div class="btnscon">
+                <div>
+                    <button class="minus">-</button>
+                </div>
+                <div>
+                    <input type="number" value="0" id="quantity" min="1" class="inpt" >
+                </div>
+                <div>
+                    <button class="plus ms-auto">+</button>
+                </div>
+            </div>
+
+
+            <button class="addtocart">Add to cart</button>
+        </div>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://www.linkedin.com/in/eman-mostafa-277bb919a/">Eman Mostafa</a>.
+          </div>
+    </div>
+
+</body>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
+
+    const minusBtn = document.querySelector(".minus")
+    const plusBtn = document.querySelector(".plus") 
+    minusBtn.addEventListener("click", () => {
+	if (quantity.value > 0) {
+		quantity.value--
+	}
+    })
+
+    plusBtn.addEventListener("click", () => {
+	quantity.value++
+    })
+    </script>
+</html>

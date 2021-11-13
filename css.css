@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box ;
+}
+
+.nav-m{
+    width: 1200px;
+    height: 120px;
+    margin-left: 150px;
+    border-bottom: 1px solid gray;
+
+}
+
+.logo{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.nav1{
+    margin-top: -45px;
+    margin-left: 230px;
+    width: 600px;
+    height: 120px;
+    
+}
+.nav1 a{
+    display: inline-block;
+    text-align: center;
+    color:  hsl(219, 9%, 45%)    ;
+    font-family: 'Kumbh Sans';
+    font-size: 16px;
+    font-weight: 400;
+    padding: 25px 20px 48px 20px;
+    text-decoration: none;
+
+    
+   
+}
+
+.nav1 a:hover{
+    color: black;
+    border-bottom: 4px solid orange;
+}
+
+
+.menu-toggler{
+    width: 30px;
+    background: none;
+    padding: 25px 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+.menu-toggler span{
+    display: block;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    position: relative;
+    transition: 0.3s;
+}
+
+.avatar{
+    float: left;
+    width: 45px;
+    margin-left: 1100px;
+    margin-top: -105px;
+    cursor: pointer;
+}
+
+.avatar:hover {
+    box-shadow: 0 0 0 3px orange;
+    border-radius: 25px;
+    cursor: pointer;
+    
+
+}
+
+.cart{
+    margin-left: 1030px;
+    float: left;
+    margin-top: -90px;
+}
+
+.cart:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.product1, .product2, .product3, .product4{
+    width: 450px;
+    border-radius: 30px;
+    
+}
+
+.mySlides{
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(71, 71, 71, 0.8);
+    color: white;
+}
+
+
+.fade {  
+    -webkit-animation-name: fade;  
+    -webkit-animation-duration: .5s;  
+    animation-name: fade;  
+    animation-duration: .5s;  
+}  
+@-webkit-keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }  
+}  
+
+@keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }
+}
+
+.column {
+    float: left;
+    width: 120px;
+}
+  
+.demo {
+    opacity: 0.7;
+}
+  
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+
+.textcontainer{
+    margin-left: 800px;
+    margin-top: -410px;
+    width: 450px;
+}
+
+.textp1{
+    color: orange;
+    font-family: 'Kumbh Sans';
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding-bottom: 40px;
+}
+
+.textp2{
+    color: black;
+    font-family: 'Kumbh Sans';
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+.textp3{
+    color: black;
+    font-family: 'Kumbh Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.price1{
+    color: black;
+    font-family: 'Kumbh Sans';
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.condis{
+    background-color: rgb(245, 228, 196);
+    color: orange;
+    width: 50px;
+    height: 22px;
+    border-radius: 10px;
+    margin-top: -20px;
+    margin-left: 100px;
+}
+
+.discount{
+    text-align: center;
+    font-family: 'Kumbh Sans';
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 2px;
+}
+
+.price2{
+    color: rgb(122, 120, 120);
+    font-family: 'Kumbh Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    padding-bottom: 20px;
+    text-decoration: line-through;
+}
+
+
+.btnscon{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(245, 228, 196);
+    border-radius: 8px;
+    justify-content: center;
+    
+}
+.minus{
+    font-family: 'Kumbh sans';
+    font-size: 30px;
+    font-weight: 700;
+    color: orange;
+    outline: none;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 2px;
+    
+}
+
+.inpt{
+    float: left;
+    font-family: 'Kumbh sans';
+    font-size: 16px;
+    width: 40px;
+    font-weight: 700;
+    color: black;
+    outline: none;
+    padding: 0;
+    border: none;
+    background: none;
+    margin-left: 45px;
+    margin-top: -52px;
+}
+
+.plus{
+    float: left;
+    font-family: 'Kumbh sans';
+    font-size: 30px;
+    font-weight: 700;
+    color: orange;
+    outline: none;
+    padding: 0;
+    border: none;
+    background: none;
+    margin-left: 90px;
+    margin-top: -62px;
+    cursor: pointer;
+}
+
+.addtocart{
+    float: left;
+    width: 260px;
+    height: 50px;
+    margin-left: 170px;
+    margin-top: -66px;
+    background-color: #FF7D1B;
+    font-family: "kumbh sans";
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.attribution{
+    text-align: center;
+    margin-top: 140px;
+    font-family: "kumbh sans";
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: #FF7D1B ;
+}
